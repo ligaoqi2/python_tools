@@ -6,7 +6,7 @@ img = cv2.imread('img.jpg')
 img1 = cv2.resize(img, (800,600))
 gray = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 sift = cv2.SIFT_create()
-kp, features = sift.detectAndCompute(gray,None)
+kp, features = sift.detectAndCompute(gray, None)
 print("features is {}".format(features)+"\n"+"size is {}".format(features.shape))
 print("num of kps is {}".format((len(kp))))
 
